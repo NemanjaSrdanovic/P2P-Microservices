@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<title>DROPPED MESSAGES</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="http://127.0.0.1:8080">NMM CONTROLLER</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="http://127.0.0.1:8080/messages/all">AllMessages <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://127.0.0.1:8080/messages/diagrams/load">Received Messages</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://127.0.0.1:8080/messages/drop/load">Dropped Messages</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<h2>DROPPED MESSAGES</h2>
+
+
+	<script th:inline="javascript">
+		/*<![CDATA[*/
+		let diagramEl = "";
+		let classOfTheCurrentDiagram = "";
+		/*]]>*/
+	</script>
+
+	<div th:each="instance, iStat: ${diagrams}"  >
+		MessageID: <span th:text="${instance.key}" />
+		<div class="mermaid position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light" th:classappend="${iStat.index}">
+		<script th:inline="javascript">
+			/*<![CDATA[*/
+			  diagramEl = /*[[${instance.value}]]*/ "Test";
+			  classOfTheCurrentDiagram = "" + /*[[${iStat.index}]]*/ "Test";
+			/*]]>*/
+			//element.appendChild(e.firstChild);
+			document.getElementsByClassName(classOfTheCurrentDiagram)[0].innerHTML = diagramEl;
+			console.log(diagramEl)
+			mermaid.initialize({ }, "." + classOfTheCurrentDiagram);
+		</script>	
+		</div>
+		<br />
+		<hr />
+	</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid@8.4.0/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true});</script>
+</html>
