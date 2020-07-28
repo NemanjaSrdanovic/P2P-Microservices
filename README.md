@@ -18,7 +18,7 @@ In dieser Aufgabe basiert das Szenario auf dem Routen, Steuern und Überwachen v
 -----------------------------
 -----------------------------
 
-Wie man die Implementierung testet?
+Wie kann die Implementierung getestet werden?
 
 Die Microservices können von 4 Personen, die an 4 verschiedene Netzwerke (IPs) verbunden sind, oder mithilfe von VPN getestet werden. Dabei muss jeder der 4 Microservices in Eclipse gestartet werden. Anleitung und Beschreibung befinden sich im documentation Folder unter "report dead".
 
