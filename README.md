@@ -78,9 +78,26 @@ memory) message storage solution into account.
 
 
 <details>
-<summary>	</summary>
+<summary>MS1 - Automatic Routing Service (ARS):</summary>
 <p>
 
++ <summary>Route Calculation</summary>
+Focuses on enabling to calculate an optimal route for a given
+start and destination location on a map. For this you can apply a number of
+simple routing algorithms, such as, breadth/depth frst search, Dijkstra algorithm,
+and so on.
+
+
++ <summary>Route Optimization</summary>
+Focuses on enabling to update and recalculate routes on the
+fly for a car which has already started its trip. Hence, it must be possible for a car
+to signal its current position such that the ARS can check if a calculated route for
+this car is still relevant or must be updated.
+
++ <summary>Multi-Threading</summary>
+If your team consists of three or more students you will need to
+design and implement this MS in a way that ensures that the outlined tasks (e.g., route
+calculation and optimization) are executed in a multi-threaded job-based manner.
 
 </p>
 </details>
