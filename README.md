@@ -18,16 +18,13 @@ The P2P protocol design and implementation should provide simplifed P2P network
 functionality which is utilized by all other MS. Overall the protocol design must provide
 the following mandatory functionality:
    
-+ <details>
-<summary>Peer Discovery</summary>
-<p>
++ <summary>Peer Discovery</summary>
 In a truly distributed, non-centralized P2P network the most basic
 way to discover other peers (i.e., microservice instances) and their provided func-
 tionality is so called scanning. Hereby, after starting up a peer starts to systemati-
 cally scan IP addresses and ports (in reasonable intervals) for peers. Subsequently,
 messages are sent/forwarded to these peers only.
-</p>
-</details>
+
 
 
 + <details>
