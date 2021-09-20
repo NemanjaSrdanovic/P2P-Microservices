@@ -14,6 +14,13 @@ Interactions between different participants, recognize deviations and enable peo
 
 
 
+### How to test the implementation 
+
+The microservices can be tested by 4 people connected to 4 different networks (IPs) or using VPN. Each of the 4 microservices must be started in Eclipse. Instructions and descriptions can be found in the documentation folder under "report dead".
+
+
+
+
 ## Project technology
 
 
@@ -22,3 +29,6 @@ Interactions between different participants, recognize deviations and enable peo
 **Build tool**: Maven  <br/>
 **Database**: SQLite  <br/>
 **Communication Protokoll**: UDP, REST <br/>
+
+
+
