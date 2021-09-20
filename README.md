@@ -37,56 +37,38 @@ previously discovered (see, peer discovery) and currently accessible peers.
 
 
 
-+ <details>
-<summary>Resilience</summary>
-<p>
++ <summary>Resilience</summary>
 The P2P network protocol and implementation must provide basic resis-
 tance to common struggles, such as, network latency or message processing issues.
-</p>
-</details>
 
 
-+ <details>
-<summary>Flexibility vs. Specialization</summary>
-<p>
+
+
++ <summary>Flexibility vs. Specialization</summary>
 Be aware that your P2P implementation and pro-
 tocol design must be applicable in a generic application scenario agnostic way.
 Hence, you will need to decide when to use and create generic messages to foster
 exibility (e.g., for the exchange of arbitrary data) and when to create and use spe-
 cialized messages focusing on narrow use cases.	</p>
-</details>
 
 
 
-+ <details>
-<summary>Asynchronous communication</summary>
-<p>
++ <summary>Asynchronous communication</summary>
 Use asynchronous communication when sending or
 receiving/processing messages. Hence, each message must be processed and ex-
-changed in its own thread.
-</p>
-</details>
-	
+changed in its own thread.	
 
-+ <details>
-<summary>Load Optimization</summary>
-<p>
++ <summary>Load Optimization</summary>
 To reduce the network load which can originate from automatic
 resilience measures one typically applies a range of optimization strategies. Take
 at least the following two into account when creating your network protocol and
 implementation: Time based Loop Prevention or Cache based Loop Prevention
-</p>
-</details>
 
 
-+ <details>
-<summary>Persistent Message Storage</summary>
-<p>
++ <summary>Persistent Message Storage</summary>
 The previously outlined routing/forwarding function-
 ality along with the resilience aspects requires you to take some sort of (e.g., in
 memory) message storage solution into account.
-</p>
-</details>
 	
 </p>
 </details>
