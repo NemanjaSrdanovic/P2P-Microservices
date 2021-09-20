@@ -27,16 +27,13 @@ messages are sent/forwarded to these peers only.
 
 
 
-+ <details>
-<summary>Routing and Forwarding</summary>
-<p>
++ <summary>Routing and Forwarding</summary>
 The P2P network shall utilize hop-by-hop transport to
 distribute messages and information. Hereby, the data is not exchanged directly
 between some source and destination peer but instead routed along a number
 of intermediate peers which temporarily store and relay incoming messages to
 previously discovered (see, peer discovery) and currently accessible peers.
-</p>
-</details>
+
 
 
 
