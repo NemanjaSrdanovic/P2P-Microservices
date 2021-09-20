@@ -18,7 +18,7 @@ The P2P protocol design and implementation should provide simplifed P2P network
 functionality which is utilized by all other MS. Overall the protocol design must provide
 the following mandatory functionality:
    
-	+<details>
+	+ <details>
 	<summary>Peer Discovery</summary>
 	
 	In a truly distributed, non-centralized P2P network the most basic
@@ -30,7 +30,7 @@ the following mandatory functionality:
 	</details>
 
 
-	+<details>
+	+ <details>
 	<summary>Routing and Forwarding</summary>
 	
 	The P2P network shall utilize hop-by-hop transport to
@@ -43,7 +43,7 @@ the following mandatory functionality:
 
 
 
-	+<details>
+	+ <details>
 	<summary>Resilience</summary>
 	
 	The P2P network protocol and implementation must provide basic resis-
@@ -52,7 +52,7 @@ the following mandatory functionality:
 	</details>
 
 
-	+<details>
+	+ <details>
 	<summary>Flexibility vs. Specialization</summary>
 	
 	Be aware that your P2P implementation and pro-
@@ -65,7 +65,7 @@ the following mandatory functionality:
 
 
 
-	+<details>
+	+ <details>
 	<summary>Asynchronous communication</summary>
 	
 	Use asynchronous communication when sending or
@@ -75,7 +75,7 @@ the following mandatory functionality:
 	</details>
 	
 
-	+<details>
+	+ <details>
 	<summary>Load Optimization</summary>
 	
 	To reduce the network load which can originate from automatic
@@ -86,7 +86,7 @@ the following mandatory functionality:
 	</details>
 
 
-	+<details>
+	+ <details>
 	<summary>Persistent Message Storage</summary>
 	
 	The previously outlined routing/forwarding function-
