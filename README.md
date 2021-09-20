@@ -18,7 +18,7 @@ The P2P protocol design and implementation should provide simplifed P2P network
 functionality which is utilized by all other MS. Overall the protocol design must provide
 the following mandatory functionality:
    
-	+ <details>
++ <details>
 	<summary>Peer Discovery</summary>
 	
 	In a truly distributed, non-centralized P2P network the most basic
