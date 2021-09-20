@@ -27,7 +27,7 @@ the following mandatory functionality:
 	cally scan IP addresses and ports (in reasonable intervals) for peers. Subsequently,
 	messages are sent/forwarded to these peers only.
 	
-	
+</details>
 
 
 	+ <details>
@@ -98,7 +98,7 @@ the following mandatory functionality:
      </details> 
     </details>
    </details>
-  </details>
+
 
 </details>
 
