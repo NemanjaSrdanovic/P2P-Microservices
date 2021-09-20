@@ -13,88 +13,89 @@ Accordingly, the system consists of four microservices and an MS framework compo
 
 <details>
 <summary>MSCF - Peer 2 Peer Communication Framework (P2P)</summary>
-<p>
+
 The P2P protocol design and implementation should provide simplifed P2P network
 functionality which is utilized by all other MS. Overall the protocol design must provide
 the following mandatory functionality:
    
 	+<details>
 	<summary>Peer Discovery</summary>
-	<p>
+	
 	In a truly distributed, non-centralized P2P network the most basic
 	way to discover other peers (i.e., microservice instances) and their provided func-
 	tionality is so called scanning. Hereby, after starting up a peer starts to systemati-
 	cally scan IP addresses and ports (in reasonable intervals) for peers. Subsequently,
 	messages are sent/forwarded to these peers only.
-	</p>
+	
 	</details>
 
 
 	+<details>
 	<summary>Routing and Forwarding</summary>
-	<p>
+	
 	The P2P network shall utilize hop-by-hop transport to
 	distribute messages and information. Hereby, the data is not exchanged directly
 	between some source and destination peer but instead routed along a number
 	of intermediate peers which temporarily store and relay incoming messages to
 	previously discovered (see, peer discovery) and currently accessible peers.
-	</p>
+	
 	</details>
 
 
 
 	+<details>
 	<summary>Resilience</summary>
-	<p>
+	
 	The P2P network protocol and implementation must provide basic resis-
 	tance to common struggles, such as, network latency or message processing issues.
-	</p>
+	
 	</details>
 
 
 	+<details>
 	<summary>Flexibility vs. Specialization</summary>
-	<p>
+	
 	Be aware that your P2P implementation and pro-
 	tocol design must be applicable in a generic application scenario agnostic way.
 	Hence, you will need to decide when to use and create generic messages to foster
 	exibility (e.g., for the exchange of arbitrary data) and when to create and use spe-
-	cialized messages focusing on narrow use cases.	</p>
+	cialized messages focusing on narrow use cases.
+
 	</details>
 
 
 
 	+<details>
 	<summary>Asynchronous communication</summary>
-	<p>
+	
 	Use asynchronous communication when sending or
 	receiving/processing messages. Hence, each message must be processed and ex-
 	changed in its own thread.
-	</p>
+	
 	</details>
 	
 
 	+<details>
 	<summary>Load Optimization</summary>
-	<p>
+	
 	To reduce the network load which can originate from automatic
 	resilience measures one typically applies a range of optimization strategies. Take
 	at least the following two into account when creating your network protocol and
 	implementation: Time based Loop Prevention or Cache based Loop Prevention
-	</p>
+	
 	</details>
 
 
 	+<details>
 	<summary>Persistent Message Storage</summary>
-	<p>
+	
 	The previously outlined routing/forwarding function-
 	ality along with the resilience aspects requires you to take some sort of (e.g., in
 	memory) message storage solution into account.
-	</p>
+	
 	</details>
 	
-</p>
+
 </details>
 
 
