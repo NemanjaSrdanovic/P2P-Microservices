@@ -78,7 +78,7 @@ memory) message storage solution into account.
 
 
 <details>
-<summary>MS1 - Automatic Routing Service (ARS):</summary>
+<summary>MS1 - Automatic Routing Service (ARS)</summary>
 <p>
 
 + <summary>Route Calculation</summary>
@@ -105,9 +105,20 @@ calculation and optimization) are executed in a multi-threaded job-based manner.
 
 
 <details>
-<summary>	</summary>
+<summary>MS2 Car Data Gateway (CDG)</summary>
 <p>
+This refers to a group of minimalistic services which simulate cars which are part of a larger manufacturer agnostic car 
+fleet. For this CDGs shall give information on car positions, desired destinations, and simulate the traveling
+along a route provided by the ARS.
 
+Hence, when the ARS has calculated and assigned a route to a car, the car should not
+insidiously travel (\teleport itself", resp.) from its origin to its destination. Instead
+it should simulate following the route such that the position updates are exchanged
+regularly, and o limit area defnitions can aect it mid travel.
+
+Note, that it must be possible to have multiple instances of each MS in the P2P network work simultaneously. This especially applies to the CDG which should be used
+to simulate at least ten concurrent cars by running ten dierent CDG instances at the
+same time.
 
 </p>
 </details>
