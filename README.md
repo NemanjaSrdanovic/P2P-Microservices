@@ -105,7 +105,7 @@ calculation and optimization) are executed in a multi-threaded job-based manner.
 
 
 <details>
-<summary>MS2 Car Data Gateway (CDG)</summary>
+<summary>MS2 - Car Data Gateway (CDG)</summary>
 <p>
 This refers to a group of minimalistic services which simulate cars which are part of a larger manufacturer agnostic car 
 fleet. For this CDGs shall give information on car positions, desired destinations, and simulate the traveling
@@ -114,11 +114,10 @@ along a route provided by the ARS.
 Hence, when the ARS has calculated and assigned a route to a car, the car should not
 insidiously travel (\teleport itself", resp.) from its origin to its destination. Instead
 it should simulate following the route such that the position updates are exchanged
-regularly, and o limit area defnitions can aect it mid travel.
+regularly, and of limit area defnitions can afect it mid travel.
 
 Note, that it must be possible to have multiple instances of each MS in the P2P network work simultaneously. This especially applies to the CDG which should be used
-to simulate at least ten concurrent cars by running ten dierent CDG instances at the
-same time.
+to simulate at least ten concurrent cars by running ten diferent CDG instances at the same time.
 
 </p>
 </details>
@@ -126,9 +125,19 @@ same time.
 
 
 <details>
-<summary>	</summary>
+<summary>MS3 - Network Monitoring and Maintenance Service (NMM)</summary>
 <p>
-
+As distributed systems, especially in the applied scenario, typically are dynamic, complex, and hard to monitor
+semi-automatic monitoring and maintenance solutions must be put in place. Hereby,
+the general network state can be observed, and issues can be detected before they result
+in broad failures while ongoing behaviour can be debugged. Here, we simulate this as-
+pect based on the NMM. The NMM must interact with the dierent peers (based on the
+P2P network) to store as much information on the peers and the messages exchanged
+between the dierent peers as possible. For this, it must at least be possible to track the
+exchange of the same message over multiple hops and the state of the message exchange
+(e.g., correctly received, or which error has occurred).
+The information recorded by the NMM must be accessible based on a web-based visualization 
+(i.e., a website delivered by the NMM which can be accessed by means of a web browser).
 
 </p>
 </details>
