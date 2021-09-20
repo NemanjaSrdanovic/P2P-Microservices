@@ -27,7 +27,7 @@ the following mandatory functionality:
 	cally scan IP addresses and ports (in reasonable intervals) for peers. Subsequently,
 	messages are sent/forwarded to these peers only.
 	
-	</details>
+	
 
 
 	+ <details>
@@ -39,7 +39,7 @@ the following mandatory functionality:
 	of intermediate peers which temporarily store and relay incoming messages to
 	previously discovered (see, peer discovery) and currently accessible peers.
 	
-	</details>
+	
 
 
 
@@ -49,8 +49,7 @@ the following mandatory functionality:
 	The P2P network protocol and implementation must provide basic resis-
 	tance to common struggles, such as, network latency or message processing issues.
 	
-	</details>
-
+	
 
 	+ <details>
 	<summary>Flexibility vs. Specialization</summary>
@@ -61,7 +60,7 @@ the following mandatory functionality:
 	exibility (e.g., for the exchange of arbitrary data) and when to create and use spe-
 	cialized messages focusing on narrow use cases.
 
-	</details>
+	
 
 
 
@@ -72,7 +71,7 @@ the following mandatory functionality:
 	receiving/processing messages. Hence, each message must be processed and ex-
 	changed in its own thread.
 	
-	</details>
+	
 	
 
 	+ <details>
@@ -83,7 +82,7 @@ the following mandatory functionality:
 	at least the following two into account when creating your network protocol and
 	implementation: Time based Loop Prevention or Cache based Loop Prevention
 	
-	</details>
+	
 
 
 	+ <details>
@@ -94,7 +93,12 @@ the following mandatory functionality:
 	memory) message storage solution into account.
 	
 	</details>
-	
+       </details>
+      </details>
+     </details> 
+    </details>
+   </details>
+  </details>
 
 </details>
 
