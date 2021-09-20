@@ -257,7 +257,7 @@ automatically be picked up and integrated by all other already running MS instan
 
 ### How to test the implementation 
 
-The microservices can be tested by 4 people connected to the same network or using VPN. Each of the 4 microservices must be started in Eclipse. Instructions and descriptions can be found in the documentation folder under "report dead".
+The microservices can be tested by 4 people connected to the same network or using VPN. Each of the 4 microservices must be started in Eclipse. Instructions and descriptions can be found in the Sub-task 2 folder under "report dead".
 
 
 
