@@ -165,7 +165,7 @@ or compare travelled/remaining distance.
 
 + <summary>Control</summary>
 With regards to control/override the RMS must provide means to defne
-areas which must not be used by the cars (i.e., o-limit areas). These off-limit
+areas which must not be used by the cars (i.e., off-limit areas). These off-limit
 areas must be respected by the ARS when calculating or updating routes. Each
 newly established of limit area shall affect all cars and routes. This includes newly
 calculated routes and also already calculated/followed routes. For the latter cars
