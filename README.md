@@ -131,9 +131,9 @@ As distributed systems, especially in the applied scenario, typically are dynami
 semi-automatic monitoring and maintenance solutions must be put in place. Hereby,
 the general network state can be observed, and issues can be detected before they result
 in broad failures while ongoing behaviour can be debugged. Here, we simulate this as-
-pect based on the NMM. The NMM must interact with the dierent peers (based on the
+pect based on the NMM. The NMM must interact with the diferent peers (based on the
 P2P network) to store as much information on the peers and the messages exchanged
-between the dierent peers as possible. For this, it must at least be possible to track the
+between the diferent peers as possible. For this, it must at least be possible to track the
 exchange of the same message over multiple hops and the state of the message exchange
 (e.g., correctly received, or which error has occurred).
 The information recorded by the NMM must be accessible based on a web-based visualization 
@@ -143,6 +143,39 @@ The information recorded by the NMM must be accessible based on a web-based visu
 </details>
 
 
+
+
+
+<details>
+<summary>MS4 - Road Management Service (RMS)</summary>
+<p>
+Automatic systems regularly require some sort of
+interface to observe, control, and override automatic operations in the case of unique
+use cases, unexpected scenarios, or catastrophes.
+
+The RMS focuses on providing following functionality:
+
++ <summary>Observation</summary>
+With regards to observation the RSM must provide a) an overview on
+the routes calculated by the ARS; and b) insights on the dynamic traveling progress
+of different cars. For example, display the current estimated time of arrival (ETA)
+or compare travelled/remaining distance.
+
+
+
++ <summary>Control</summary>
+With regards to control/override the RMS must provide means to defne
+areas which must not be used by the cars (i.e., o-limit areas). These off-limit
+areas must be respected by the ARS when calculating or updating routes. Each
+newly established of limit area shall affect all cars and routes. This includes newly
+calculated routes and also already calculated/followed routes. For the latter cars
+which are already on its way must update their route accordingly to evade of limit
+areas in a dynamic fashion.
+
+
+
+</p>
+</details>
 
 ## Project implemetation
 
